@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    
+    <ion-title>profil</ion-title>
+    
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-item  *ngFor="let user of userListe">
+  <ion-label>{{ user.name }} {{ user.prenom }} {{ user.email }} {{ user.tel }} {{ user.password }}</ion-label>    
+</ion-item>
+
+
+
+<ion-button color="tertiary" expand="block" shape="round" routerLink="/utilisateurs">Utilisateurs</ion-button>
+
+
+<ion-back-button slot="Start" defaultHref="home"></ion-back-button>
+
+
+
+</ion-content>

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color=tertiary>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>inscription</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #donnee="ngForm" (ngSubmit)="add(donnee)">  
+    <ion-item >
+      <ion-label color="danger">Nom:</ion-label>
+      <ion-input color="tertiary" type="text" name="name" placeholder="Entrez votre nom" ngModel></ion-input>
+    </ion-item>
+    <ion-item >
+      <ion-label color="danger">Prénom:</ion-label>
+      <ion-input color="tertiary" type="text" name="prenom" placeholder="Entrez votre Prénom" ngModel></ion-input>
+    </ion-item>
+    <ion-item >
+      <ion-label color="danger">Numéro de tél:</ion-label>
+      <ion-input color="tertiary" type="text" name="tel" placeholder="Entrez votre number" ngModel></ion-input>
+    </ion-item>
+    <ion-item >
+      <ion-label color="danger">Email:</ion-label>
+      <ion-input color="tertiary" type="mail" name="email" placeholder="Adresse email" ngModel></ion-input>
+    </ion-item>
+    <ion-item >
+      <ion-label color="danger">Mot de passe:</ion-label>
+      <ion-input color="tertiary" type="text" name="password" placeholder="Entrez votre mot de passe" ngModel></ion-input>
+    </ion-item>
+  
+    <ion-button color="tertiary" expand="block" shape="round" type="submit">Envoyer</ion-button>
+  
+
+  </form>
+ 
+</ion-content>
